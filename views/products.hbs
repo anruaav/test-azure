@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+
+{{#each products}}
+<div style="padding: 20px;">
+ <div class="col s12 m7">
+    <h2 class="header">{{dataValues.title}}  </h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="{{dataValues.img}}" width="50">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>    {{dataValues.price}} грн.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Купить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<hr>
+
+{{/each}}
